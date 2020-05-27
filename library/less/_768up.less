@@ -1,0 +1,332 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 744px;
+}
+.grid {
+	display: inline-block;
+	vertical-align: top;
+	width: 234px;
+	margin-bottom: 21px;
+	&.first {
+		display: inline-block;
+	}
+	.entry-content {
+		width: 100%;
+		max-height: 100%;
+		height: 122px;
+		margin: auto;
+		position: absolute;
+		top:0; left: 0; bottom: 0; right: 0;
+		display: none;
+		text-align: center;
+		z-index: 10;
+		h1 {
+			font-size: 36px;
+			line-height: 40px;
+			margin: 0;
+			position: absolute;
+			top: 10px;;
+			width: 100%;
+		}
+		p {
+			font-size: 14px;
+			line-height: 18px;
+			margin: 0;
+			position: absolute;
+			bottom: 10px;
+			width: 100%;
+		}	
+	}
+}
+.nomasonry:nth-of-type(3n-2),.nomasonry:nth-of-type(3n-1){
+	margin-right: 21px;
+}
+#gutter {
+	width: 21px;
+}
+#main {
+}
+
+
+
+
+/*********************
+06. HEADER STYLES
+*********************/
+#inner-header {
+	height: 40px;
+	font-size: 18px;
+	#logo {
+		img {
+			margin: 11px 0;
+		}
+	}
+}
+#inner-info {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	#info-left {
+		#info-content {
+		}
+		.info-separator {
+		}
+		#info-contact {
+			.genericon {
+				position: absolute;
+				left: 50%;
+				margin-left: -20px;
+				&.first {
+					left: 0;
+					margin: 0;
+				}
+				&.last {
+					left: auto;
+					right: 0;
+					margin: 0;
+				}
+			}
+			.twocol {
+			}
+			.contact {
+				margin-top: 0;
+				&.first {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	#info-right {
+		margin-top: 0;
+		font-size: 1.8em;
+	}
+}
+/*********************
+08. POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	margin-top: 70px;
+	#inner-content {}
+}
+.hentry {
+	.entry-content {
+	}
+}
+.section {
+	padding-top: 64px;
+	.entry-content {
+		top: 0;
+		h1 {
+			font-size: 36px;
+		}
+		p {
+			font-size: 14px;
+		}	
+	}
+	.fp-controlArrow.fp-prev {
+	    left: 20px;
+	    border-width: 0;
+	}
+	.fp-controlArrow.fp-next {
+	    right: 20px;
+	    border-width: 0;
+	}
+	.fp-controlArrow {
+		margin-top: 0;
+	}
+	.video {
+		iframe, object, embed {
+			padding: 0 70px;
+		}
+	}
+
+}
+.single-series {
+	#inner-header #backbutton {
+		display: block;
+		position: absolute;
+		left: 10px;
+		line-height: 40px;
+	}
+}
+
+#fullPage-nav {
+	display: inherit;
+}
+
+		.single-title,
+		.page-title {}
+
+		.single-title {}
+
+		.page-title {}
+
+		.archive-title { }
+
+		/* want to style individual post classes? Booya! */
+		.post-id {}         /* post by id (i.e. post-3) */
+		.post {}            /* general post style */
+		.page {}            /* general article on a page style */
+		.attachment {}      /* general style on an attatchment */
+		.sticky {}          /* sticky post style */
+		.hentry {}          /* hentry class */
+		.category-slug {}   /* style by category (i.e. category-videos) */
+		.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+		/* post meta */
+		.byline {
+			color: #999;
+
+			time {}
+		}
+
+		/* entry content */
+		.entry-content {
+
+			p {}
+
+
+			ul, ol, table, dl {}
+
+			ul, ol {
+
+				li {}
+
+			}
+
+			ul {
+
+				li {}
+
+			}
+
+			ol {
+
+				li {}
+
+			}
+
+			blockquote {
+
+				&:before {}
+
+			}
+
+			dl {}
+
+			dt {}
+
+			dd {
+				margin-left: 0;
+				font-size: 0.9em;
+				color: #787878;
+				margin-bottom: 1.5em;
+			}
+
+			img {
+				margin: 0 0 1.5em 0;
+				max-width: 100%;
+				height: auto;
+			}
+
+			/*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+			.alignleft, img.alignleft {}
+			.alignright, img.alignright {}
+			.aligncenter, img.aligncenter {}
+
+			video, object {
+				max-width: 100%;
+				height: auto;
+			}
+
+			pre {
+				background: #eee;
+				border: 1px solid #cecece;
+				padding: 10px;
+			}
+
+		} /* end .entry-content */
+
+		.wp-caption {
+			max-width: 100%;
+			background: #eee;
+			padding: 5px;
+
+			/* images inside wp-caption */
+			img {
+				max-width: 100%;
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			p.wp-caption-text {
+				font-size: 0.85em;
+				margin: 4px 0 7px;
+				text-align: center;
+			}
+
+		} /* end .wp-caption */
+
+		/* image gallery styles */
+		.gallery {
+
+			dl {
+
+				a {}
+
+				img {}
+
+			}
+
+			dt {}
+
+			dd {}
+
+		} /* end .gallery */
+
+		/* gallery caption styles */
+		.gallery-caption {}
+
+		.size-full {}
+		.size-large {}
+		.size-medium {}
+		.size-thumbnail {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
